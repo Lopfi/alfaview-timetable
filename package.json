@@ -1,0 +1,14 @@
+{
+  "name": "alfaview-timetable",
+  "version": "1.0.0",
+  "description": "a timetable app that saves all links form videocalls with alfaview",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Robin Dorst",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^11.0.2"
+  }
+}
