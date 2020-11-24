@@ -11,7 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71421df8-facb-4eac-bf70-8ef9663118e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/addWindow.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +32,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kb5AChUJHPsAqF2Ofq0y12Gy0c" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,6 +68,7 @@
       <workItem from="1606114884039" duration="821000" />
       <workItem from="1606115724530" duration="1890000" />
       <workItem from="1606118141990" duration="89000" />
+      <workItem from="1606119242329" duration="4811000" />
     </task>
     <servers />
   </component>
@@ -79,6 +85,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="461" y="165" key="SettingsEditor" timestamp="1606115704555">

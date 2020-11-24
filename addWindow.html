@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+    <form>
+        <label for="Name">Name:</label><br>
+        <input type="text" id="name"><br>
+        <label for="link">Link:</label><br>
+        <input type="text" id="link"><br>
+        <input type="submit" value="Hinzufügen">
+    </form>
+
+    <script>
+        const electron = require('electron');
+        const {ipcRenderer} = electron;
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', submitForm);
+
+        function submitForm(e) {
+            e.preventDefault();
+            const name = document.querySelector('#name');
+            const link = document.querySelector('#link');
+            ipcRenderer.send('subject:add', {name, link});
+
+        }
+    </script>
+</body>
+</html>
