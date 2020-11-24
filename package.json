@@ -4,11 +4,17 @@
   "description": "a timetable app that saves all links form videocalls with alfaview",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . Alfaview-Timetable --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Alfaview Timetable\"",
+    "package-linux": "electron-packager . Alfaview-Timetable --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
   },
   "author": "Robin Dorst",
   "license": "MIT",
   "dependencies": {
     "electron": "^11.0.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.1.0"
   }
 }
