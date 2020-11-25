@@ -1,10 +1,18 @@
 const electron = require('electron');
-const url = require('url');
-const path = require('path')
+const fs = require('fs');
+const path = require('path');
+
+process.env.NODE_ENV = 'development' //production
 
 const {app, BrowserWindow, Menu, ipcMain} = electron;
 
-let mainWindow, addWindow;
+var mainWindow, addWindow, editWindow;
+
+let rawdata = fs.readFileSync('subjects.json');
+json = JSON.parse(rawdata);
+global.subjects = [];
+for(var i in json) subjects.push(json[i]);
+console.log(subjects);
 
 // Listen for app to be ready
 app.on('ready', function () {
@@ -25,13 +33,17 @@ app.on('ready', function () {
     //Insert menu
     Menu.setApplicationMenu(mainMenu);
 });
+
 //Handle create add window
 function createAddWindow() {
     //Create new Window
     addWindow = new BrowserWindow({
         width: 300,
         height: 200,
-        title: 'füge einen neuen Termin ein'
+        title: "füge einen neuen Termin ein",
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
     //Load html into window
     addWindow.loadFile('addWindow.html');
@@ -41,12 +53,40 @@ function createAddWindow() {
     });
 }
 
+//Handle create edit window
+function createEditWindow() {
+    //Create new Window
+    editWindow = new BrowserWindow({
+        title: "Plan bearbeiten",
+        webPreferences: {
+            nodeIntegration: true,
+            enableRemoteModule: true
+        }
+    });
+    //Load html into window
+    editWindow.loadFile('editWindow.html');
+
+    //Garbage collection handle
+    editWindow.on('close', function () {
+        editWindow = null;
+    });
+}
+
 //Catch subject:add
-ipcMain.on('item:add', function (e, {name, link}) {
-    console.log({name, link});
-    mainWindow.webContents.send('subject:add', {name, link});
+ipcMain.on('subject:add', function (e, name, link) {
+    console.log(name, link);
+    var subject = {name: name, link: link};
+    subjects.push(subject);
+    fs.writeFile(
+        './subjects.json',
+        JSON.stringify(subjects),
+        function (err) {
+            if (err) console.error('error saving subjects');
+        }
+    );
+    console.log(subjects);
     addWindow.close();
-})
+});
 
 //Create Menu Template
 const mainMenuTemplate = [
@@ -54,18 +94,21 @@ const mainMenuTemplate = [
         label: 'File',
         submenu: [
             {
-                label: 'Vorlage importieren'
+                label: 'Plan bearbeiten',
+                click(){
+                    createEditWindow();
+                }
             },
             {
                 label: 'Fach hinzufügen',
-                accelerator: process.platform == 'darwin' ? 'Command+A' : 'Ctrl+A',
+                accelerator: process.platform == 'darwin' ? 'Command+K' : 'Ctrl+K',
                 click(){
                     createAddWindow();
                 }
             }
         ]
     }
-]
+];
 
 //If mac, add empty object to menu
 if (process.platform == "darwin") {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add</title>
+    <title>Fach hinzufügen</title>
 </head>
 <body>
     <form>
@@ -21,11 +21,12 @@
         form.addEventListener('submit', submitForm);
 
         function submitForm(e) {
+            console.log("submit")
             e.preventDefault();
-            const name = document.querySelector('#name');
-            const link = document.querySelector('#link');
-            ipcRenderer.send('subject:add', {name, link});
-
+            const name = document.querySelector('#name').value;
+            const link = document.querySelector('#link').value;
+            console.log(name, link)
+            ipcRenderer.send('subject:add', name, link);
         }
     </script>
 </body>

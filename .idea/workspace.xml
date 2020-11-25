@@ -10,10 +10,88 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71421df8-facb-4eac-bf70-8ef9663118e6" name="Default Changelist" comment="">
+    <list default="true" id="71421df8-facb-4eac-bf70-8ef9663118e6" name="Default Changelist" comment="add edit page and automatic saving of the subjects to json file">
+      <change afterPath="$PROJECT_DIR$/assets/js/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editWindow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subjects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/addWindow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/LICENSES.chromium.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/chrome_100_percent.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/chrome_200_percent.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/d3dcompiler_47.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/electron-tutorial-app.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/ffmpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/icudtl.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/libEGL.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/libGLESv2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/am.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ar.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/bg.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/bn.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ca.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/cs.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/da.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/de.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/el.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/en-GB.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/en-US.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/es-419.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/es.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/et.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/fa.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/fi.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/fil.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/fr.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/gu.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/he.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/hi.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/hr.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/hu.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/id.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/it.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ja.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/kn.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ko.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/lt.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/lv.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ml.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/mr.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ms.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/nb.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/nl.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/pl.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/pt-BR.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/pt-PT.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ro.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ru.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/sk.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/sl.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/sr.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/sv.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/sw.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/ta.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/te.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/th.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/tr.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/uk.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/vi.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/zh-CN.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/locales/zh-TW.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/resources.pak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/resources/app.asar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/snapshot_blob.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/swiftshader/libEGL.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/swiftshader/libGLESv2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/v8_context_snapshot.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/vk_swiftshader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/vk_swiftshader_icd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/vulkan-1.dll" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +103,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -33,6 +112,7 @@
   </component>
   <component name="ProjectId" id="1kb5AChUJHPsAqF2Ofq0y12Gy0c" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -55,6 +135,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Robin\Documents\Projekte\alfaview-timetable\main" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,6 +156,8 @@
       <workItem from="1606118141990" duration="89000" />
       <workItem from="1606119242329" duration="4811000" />
       <workItem from="1606202313588" duration="1947000" />
+      <workItem from="1606254310471" duration="3846000" />
+      <workItem from="1606287266182" duration="8109000" />
     </task>
     <servers />
   </component>
@@ -89,10 +176,34 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add edit page and automatic saving of the subjects to json file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add edit page and automatic saving of the subjects to json file" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="523" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606255655561">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="523" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1606255655561" />
+    <state x="424" y="0" key="CommitChangelistDialog2" timestamp="1606300741659">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="424" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1606300741659" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1606115704555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/1920.-6.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606115704555" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1606300792423">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606300792423" />
+    <state x="617" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606300539728">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="617" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1606300539728" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1606289891508">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1606289891508" />
   </component>
 </project>
