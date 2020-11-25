@@ -105,3 +105,6 @@ dist
 
 # release-builds
 ./release-builds
+
+#subjects.json
+subjects.json
