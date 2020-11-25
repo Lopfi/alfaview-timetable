@@ -11,14 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71421df8-facb-4eac-bf70-8ef9663118e6" name="Default Changelist" comment="add edit page and automatic saving of the subjects to json file">
-      <change afterPath="$PROJECT_DIR$/assets/js/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editWindow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subjects.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/addWindow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/LICENSES.chromium.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/release-builds/electron-tutorial-app-win32-ia32/chrome_100_percent.pak" beforeDir="false" />
@@ -157,8 +149,16 @@
       <workItem from="1606119242329" duration="4811000" />
       <workItem from="1606202313588" duration="1947000" />
       <workItem from="1606254310471" duration="3846000" />
-      <workItem from="1606287266182" duration="8109000" />
+      <workItem from="1606287266182" duration="8659000" />
     </task>
+    <task id="LOCAL-00001" summary="add edit page and automatic saving of the subjects to json file">
+      <created>1606300872062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606300872062</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,18 +185,18 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="523" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1606255655561" />
-    <state x="424" y="0" key="CommitChangelistDialog2" timestamp="1606300741659">
+    <state x="424" y="0" key="CommitChangelistDialog2" timestamp="1606300869494">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="424" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1606300741659" />
+    <state x="424" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1606300869494" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1606115704555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/1920.-6.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606115704555" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1606300792423">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1606300898073">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606300792423" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606300898073" />
     <state x="617" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606300539728">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
