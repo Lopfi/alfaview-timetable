@@ -107,4 +107,4 @@ dist
 ./release-builds
 
 #subjects.json
-subjects.json
+app/data/subjects.json

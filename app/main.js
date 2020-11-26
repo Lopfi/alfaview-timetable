@@ -12,7 +12,6 @@ let rawdata = fs.readFileSync('subjects.json');
 json = JSON.parse(rawdata);
 global.subjects = [];
 for(var i in json) subjects.push(json[i]);
-console.log(subjects);
 
 // Listen for app to be ready
 app.on('ready', function () {
@@ -23,7 +22,7 @@ app.on('ready', function () {
        }
    });
    //Load html into window
-    mainWindow.loadFile('index.html');
+    mainWindow.loadFile(path.join(__dirname, 'index.html'));
     //quit app when closed
     mainWindow.on('closed', function () {
         app.quit();
@@ -46,7 +45,7 @@ function createAddWindow() {
         }
     });
     //Load html into window
-    addWindow.loadFile('addWindow.html');
+    addWindow.loadFile('./assets/html/addWindow.html');
     //Garbage collection handle
     addWindow.on('close', function () {
         addWindow = null;
@@ -64,7 +63,7 @@ function createEditWindow() {
         }
     });
     //Load html into window
-    editWindow.loadFile('editWindow.html');
+    editWindow.loadFile('./assets/html/editWindow.html');
 
     //Garbage collection handle
     editWindow.on('close', function () {
@@ -95,25 +94,19 @@ const mainMenuTemplate = [
         submenu: [
             {
                 label: 'Plan bearbeiten',
-                click(){
-                    createEditWindow();
-                }
+                click(){createEditWindow();}
             },
             {
                 label: 'Fach hinzufügen',
                 accelerator: process.platform == 'darwin' ? 'Command+K' : 'Ctrl+K',
-                click(){
-                    createAddWindow();
-                }
+                click(){createAddWindow();}
             }
         ]
     }
 ];
 
 //If mac, add empty object to menu
-if (process.platform == "darwin") {
-    mainMenuTemplate.unshift({})
-}
+if (process.platform == "darwin") mainMenuTemplate.unshift({});
 
 //Add dev tools if not in prod
 if (process.env.NODE_ENV !== 'production') {
@@ -123,9 +116,7 @@ if (process.env.NODE_ENV !== 'production') {
             {
                 label: 'toggle DevTools',
                 accelerator: process.platform == 'darwin' ? 'Command+I' : 'Ctrl+I',
-                click(item, focusedWindow) {
-                    focusedWindow.toggleDevTools();
-                }
+                click(item, focusedWindow) {focusedWindow.toggleDevTools();}
             },
             {
                 role: 'reload'

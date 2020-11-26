@@ -12,6 +12,19 @@
   <component name="ChangeListManager">
     <list default="true" id="71421df8-facb-4eac-bf70-8ef9663118e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/html/addWindow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/mac/incon.icns" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/icons/mac/incon.icns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/png/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/icons/png/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/win/icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/icons/win/icon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/html/editWindow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subjects.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Robin\Documents\Projekte\alfaview-timetable\main" />
+      <recent name="C:\Users\Robin\Documents\Projects\alfaview-timetable\app\data" />
+      <recent name="C:\Users\Robin\Documents\Projects\alfaview-timetable\app\assets" />
+      <recent name="C:\Users\Robin\Documents\Projects\alfaview-timetable\app" />
+      <recent name="C:\Users\Robin\Documents\Projects\alfaview-timetable\assets\css" />
+      <recent name="C:\Users\Robin\Documents\Projects\alfaview-timetable\assets\html" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,6 +95,8 @@
       <workItem from="1606202313588" duration="1947000" />
       <workItem from="1606254310471" duration="3846000" />
       <workItem from="1606287266182" duration="8659000" />
+      <workItem from="1606387271708" duration="2974000" />
+      <workItem from="1606396581093" duration="3364000" />
     </task>
     <task id="LOCAL-00001" summary="add edit page and automatic saving of the subjects to json file">
       <created>1606300872062</created>
@@ -125,6 +144,22 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="424" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1606302414875" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1606387522710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/1920.-6.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1606387522710" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1606387522710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/1920.-6.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1606387522710" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1606387522710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/1920.-6.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1606387522710" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1606387522710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/1920.-6.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1606387522710" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1606115704555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
