@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Fach hinzufügen</title>
+    <script src="../js/add.js" defer></script>
 </head>
 <body>
     <form>
@@ -12,22 +13,5 @@
         <input type="text" id="link"><br>
         <input type="submit" value="Hinzufügen">
     </form>
-
-    <script>
-        const electron = require('electron');
-        const {ipcRenderer} = electron;
-
-        const form = document.querySelector('form');
-        form.addEventListener('submit', submitForm);
-
-        function submitForm(e) {
-            console.log("submit")
-            e.preventDefault();
-            const name = document.querySelector('#name').value;
-            const link = document.querySelector('#link').value;
-            console.log(name, link)
-            ipcRenderer.send('subject:add', name, link);
-        }
-    </script>
 </body>
 </html>

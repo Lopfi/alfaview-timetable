@@ -8,21 +8,27 @@ const {app, BrowserWindow, Menu, ipcMain} = electron;
 
 var mainWindow, addWindow, editWindow;
 
-let rawdata = fs.readFileSync('subjects.json');
-json = JSON.parse(rawdata);
+let rawsubjects = fs.readFileSync(path.join(__dirname, '/data', 'subjects.json'));
+subjects_json = JSON.parse(rawsubjects);
 global.subjects = [];
-for(var i in json) subjects.push(json[i]);
+for(var i in subjects_json) subjects.push(subjects_json[i]);
+
+let rawtable = fs.readFileSync(path.join(__dirname, '/data', 'table.json'));
+table_json = JSON.parse(rawtable);
+global.table = [];
+for(var i in table_json) table.push(table_json[i]);
 
 // Listen for app to be ready
 app.on('ready', function () {
    //Create new Window
    mainWindow = new BrowserWindow({
        webPreferences: {
-           nodeIntegration: true
+           nodeIntegration: true,
+           enableRemoteModule: true
        }
    });
    //Load html into window
-    mainWindow.loadFile(path.join(__dirname, 'index.html'));
+    mainWindow.loadFile(path.join(__dirname, 'assets/html/', 'index.html'));
     //quit app when closed
     mainWindow.on('closed', function () {
         app.quit();
@@ -39,13 +45,13 @@ function createAddWindow() {
     addWindow = new BrowserWindow({
         width: 300,
         height: 200,
-        title: "füge einen neuen Termin ein",
+        title: "Fächer bearbeiten",
         webPreferences: {
             nodeIntegration: true
         }
     });
     //Load html into window
-    addWindow.loadFile('./assets/html/addWindow.html');
+    addWindow.loadFile(path.join(__dirname, 'assets/html/', 'addWindow.html'));
     //Garbage collection handle
     addWindow.on('close', function () {
         addWindow = null;
@@ -54,6 +60,7 @@ function createAddWindow() {
 
 //Handle create edit window
 function createEditWindow() {
+
     //Create new Window
     editWindow = new BrowserWindow({
         title: "Plan bearbeiten",
@@ -62,8 +69,9 @@ function createEditWindow() {
             enableRemoteModule: true
         }
     });
+
     //Load html into window
-    editWindow.loadFile('./assets/html/editWindow.html');
+    editWindow.loadFile(path.join(__dirname, 'assets/html/', 'editWindow.html'));
 
     //Garbage collection handle
     editWindow.on('close', function () {
@@ -72,19 +80,37 @@ function createEditWindow() {
 }
 
 //Catch subject:add
-ipcMain.on('subject:add', function (e, name, link) {
-    console.log(name, link);
-    var subject = {name: name, link: link};
+ipcMain.on('subject:add', function (e, name, room) {
+    var subject = {name: name, room: room};
     subjects.push(subject);
     fs.writeFile(
-        './subjects.json',
+        path.join(__dirname, '/data', 'subjects.json'),
         JSON.stringify(subjects),
         function (err) {
             if (err) console.error('error saving subjects');
         }
     );
-    console.log(subjects);
     addWindow.close();
+});
+
+//Catch table:save
+ipcMain.on('table:save', function (e, table) {
+    for (i = 0; i < table.length; i++) {
+        for (var x = 0; x < subjects.length; x++) {
+            if (subjects[x].name === table[i]) {
+                var element = {name: table[i],room: subjects[x].room}
+            }
+        }
+        table[i] = element;
+    }
+    fs.writeFile(
+        path.join(__dirname, '/data', 'table.json'),
+        JSON.stringify(table),
+        function (err) {
+            if (err) console.error('error saving table');
+        }
+    );
+    editWindow.close();
 });
 
 //Create Menu Template
@@ -94,10 +120,11 @@ const mainMenuTemplate = [
         submenu: [
             {
                 label: 'Plan bearbeiten',
+                accelerator: process.platform == 'darwin' ? 'Command+E' : 'Ctrl+E',
                 click(){createEditWindow();}
             },
             {
-                label: 'Fach hinzufügen',
+                label: 'Fächer bearbeiten',
                 accelerator: process.platform == 'darwin' ? 'Command+K' : 'Ctrl+K',
                 click(){createAddWindow();}
             }
